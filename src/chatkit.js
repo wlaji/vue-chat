@@ -35,6 +35,7 @@ async function subscribeToRoom(roomId){
     messageLimit:MESSAGE_LIMIT,
     hooks:{
       onMessage:message=>{
+        console.log(message)
         store.commit('addMessage',{
           name:message.sender.name,
           username:message.senderId,

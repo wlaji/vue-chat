@@ -27,6 +27,7 @@ export default {
       this.$router.push({
         path:'/'
       })
+      this.logout();
     },
     unload(){
       if(this.user.username){
